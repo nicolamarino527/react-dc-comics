@@ -8,4 +8,15 @@
   height: 200px;
   width: 100%;
   border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar {}
+
+.main {
+  height: 70vh;
+  width: 100%;
+  border: 1px solid;
 }
