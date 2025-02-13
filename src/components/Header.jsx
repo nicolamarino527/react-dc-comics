@@ -1,5 +1,5 @@
 // importiamo la sidebar all interno dell header
-import Sidebar from "./Sidebar";
+import Sidebar from "./Navbar";
 
 export default function Header() {
     return (
