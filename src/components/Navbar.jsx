@@ -1,20 +1,26 @@
 export default function Sidebar() {
 
-
+    const links = [
+        { id: 1, text: 'CHARACTERS', url: '#' },
+        { id: 2, text: 'COMICS', url: '#' },
+        { id: 3, text: 'MOVIE', url: '#' },
+        { id: 4, text: 'TV', url: '#' },
+        { id: 5, text: 'GAMES', url: '#' },
+        { id: 6, text: 'COLLECTIBLES', url: '#' },
+        { id: 7, text: 'VIDEOS', url: '#' },
+        { id: 8, text: 'FANS', url: '#', },
+        { id: 9, text: 'NEWS', url: '#', },
+        { id: 10, text: 'SHOP', url: '#', },
+    ];
 
     return (
-        <nav className="sidebar">
+        <nav className="navebar">
             <ul>
-                <li><a href="nav">CHARACTERS</a></li>
-                <li><a href="nav">COMICS</a></li>
-                <li><a href="nav">MOVIE</a></li>
-                <li><a href="nav">TV</a></li>
-                <li><a href="nav">GAMES</a></li>
-                <li><a href="nav">COLLECTIBLES</a></li>
-                <li><a href="nav">VIDEOS</a></li>
-                <li><a href="nav">FANS</a></li>
-                <li><a href="nav">NEWS</a></li>
-                <li><a href="nav">SHOP</a></li>
+                {links.map((link) => (
+                    <li key={link.id}>
+                        <a href={link.url}>{link.text}</a>
+                    </li>
+                ))}
             </ul>
         </nav>
     );
